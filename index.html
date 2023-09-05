@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Minder - Gestión de Finanzas Personales</title>
+    <style>
+        /* Estilos CSS personalizados pueden ir aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+       
+        h1 {
+            font-size: 36px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        #expense-form {
+            margin-top: 20px;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <section>
+            <h2>Contexto General</h2>
+            <p>El equipo "TechWhizzes" se centrará en desarrollar "Money Minder", una herramienta prototipo diseñada para abordar la necesidad de una gestión efectiva de las finanzas personales. La herramienta ayudará a los usuarios a tener un mayor control sobre sus ingresos, gastos, inversiones y metas financieras.</p>
+        </section>
 
+        <section>
+            <h2>Problemática</h2>
+            <p>La mayoría de las personas enfrentan dificultades para llevar un registro detallado y preciso de sus transacciones financieras, lo que puede llevar a desequilibrios financieros, falta de ahorro y dificultades para alcanzar objetivos económicos. Además, la falta de herramientas personalizadas y fáciles de usar dificulta la gestión efectiva de las finanzas.</p>
+        </section>
+        
+        <section>
+            <h2>Solución</h2>
+            <p>"Money Minder" se presenta como una herramienta prototipo que aborda la problemática mediante la creación de una plataforma intuitiva que permita a los usuarios registrar sus ingresos y gastos de manera eficiente. Además, proporcionará un modelo de datos que integrará información relevante para brindar una visión completa de la situación financiera de cada usuario, lo que les permitirá tomar decisiones informadas y establecer metas realistas.</p>
+        </section>
+
+        <section>
+            <h2>Ventajas</h2>
+            <p>Los usuarios de "Money Minder" disfrutarán de la capacidad de llevar un seguimiento detallado de sus finanzas personales, lo que les ayudará a tomar el control de sus gastos y ahorros. La herramienta ofrecerá un análisis financiero personalizado que va más allá del simple seguimiento de ingresos y gastos, utilizando algoritmos avanzados para proporcionar a los usuarios información detallada sobre sus hábitos financieros, ofreciendo insights valiosos y recomendaciones específicas para mejorar su situación económica. Además, "Money Minder" incluirá recursos educativos sobre finanzas personales directamente en la plataforma.</p>
+        </section>
+        
+        <section>
+            <h2>Registro de Gastos</h2>
+            <p>Ingresa tus gastos diarios en el formulario a continuación:</p>
+            <form id="expense-form">
+                <label for="expense-description">Descripción del gasto:</label>
+                <input type="text" id="expense-description" name="expense-description" required>
+                <label for="expense-amount">Cantidad del gasto:</label>
+                <input type="number" id="expense-amount" name="expense-amount" required>
+                <button type="submit">Agregar Gasto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Seguimiento de Gastos</h2>
+            <p>Aquí puedes ver un gráfico de seguimiento de tus gastos:</p>
+            <div class="chart-container">
+                <canvas id="expense-chart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript para el gráfico de seguimiento de gastos (puede requerir bibliotecas adicionales)
+        // Puedes agregar aquí tu lógica JavaScript personalizada.
+    </script>
+</body>
+</html>
